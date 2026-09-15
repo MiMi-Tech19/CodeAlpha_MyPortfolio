@@ -46,7 +46,7 @@ function Projects() {
 
               <div className="overflow-hidden rounded-2xl border border-white/10">
                 <img
-                  src="/huddle.png"
+                  src={`${import.meta.env.BASE_URL}huddle.png`}
                   alt="Huddle team messaging application workspace showing channels and conversations"
                   loading="lazy"
                   className="h-full min-h-[280px] w-full object-cover object-top transition duration-700 group-hover:scale-[1.03]"

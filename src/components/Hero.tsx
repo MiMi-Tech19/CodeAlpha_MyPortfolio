@@ -58,7 +58,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/Miracle_Nwachukwu_Frontend_Developer_CV.pdf"
+              href={`${import.meta.env.BASE_URL}Miracle_Nwachukwu_Frontend_Developer_CV.pdf`}
               download
               className="rounded-full border border-white/10 px-6 py-3.5 text-sm font-semibold text-[#F8FAFC] transition-all duration-300 hover:border-[#3B82F6]/50 hover:bg-white/5"
             >

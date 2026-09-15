@@ -54,60 +54,59 @@ export default function About() {
             transition={{ duration: 0.7 }}
             className="relative mx-auto w-full max-w-md"
           >
-            <div className="relative aspect-square overflow-hidden rounded-[2rem] border border-[#3B82F6]/20 bg-[#0C1428]">
+            <div className="relative min-h-[430px] overflow-hidden rounded-[2rem] border border-[#3B82F6]/20 bg-[#0C1428] sm:aspect-square sm:min-h-0">
+              {" "}
               {/* Glow */}
               <div className="absolute left-1/2 top-1/2 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#3B82F6]/10 blur-[80px]" />
-
               {/* Code window */}
-              <div className="absolute inset-8 rounded-2xl border border-white/5 bg-[#060B1A] p-3 shadow-2xl sm:p-6">
-                {" "}
+              <div className="absolute inset-5 flex flex-col rounded-2xl border border-white/5 bg-[#060B1A] p-4 shadow-2xl sm:inset-8 sm:p-6">
                 {/* Window controls */}
-                <div className="mb-6 flex gap-2 sm:mb-8">
-                  {" "}
+                <div className="mb-2 flex gap-2 sm:mb-4">
                   <span className="h-2.5 w-2.5 rounded-full bg-[#3B82F6]" />
                   <span className="h-2.5 w-2.5 rounded-full bg-[#60A5FA]/50" />
                   <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
                 </div>
-                <div className="space-y-1 font-mono text-[10px] leading-4 sm:space-y-3 sm:text-sm sm:leading-6">
+
+                {/* Code */}
+                <div className="flex flex-1 flex-col justify-between font-mono text-[10px] leading-5 sm:text-sm sm:leading-6">
                   {" "}
                   <p className="text-[#475569]">// about-me.tsx</p>
                   <p>
                     <span className="text-[#60A5FA]">const</span>{" "}
                     <span className="text-[#F8FAFC]">developer</span> = {"{"}
                   </p>
-                  <p className="pl-5">
+                  <p className="pl-4 sm:pl-5">
                     <span className="text-[#3B82F6]">name:</span>{" "}
                     <span className="text-[#94A3B8]">"Miracle"</span>,
                   </p>
-                  <p className="pl-5">
+                  <p className="pl-4 sm:pl-5">
                     <span className="text-[#3B82F6]">role:</span>{" "}
                     <span className="text-[#94A3B8]">"Frontend Developer"</span>
                     ,
                   </p>
-                  <p className="pl-5">
+                  <p className="pl-4 sm:pl-5">
                     <span className="text-[#3B82F6]">stack:</span>{" "}
                     <span className="text-[#94A3B8]">
                       ["React", "TypeScript"]
                     </span>
                     ,
                   </p>
-                  <p className="pl-5">
+                  <p className="pl-4 sm:pl-5">
                     <span className="text-[#3B82F6]">passion:</span>{" "}
                     <span className="text-[#94A3B8]">
                       "Creating digital experiences"
                     </span>
                     ,
                   </p>
-                  <p className="pl-5">
+                  <p className="pl-4 sm:pl-5">
                     <span className="text-[#3B82F6]">skills:</span>{" "}
                     <span className="text-[#94A3B8]">
-                      "HTML, CSS, JS, React, TS, Git"{" "}
+                      "HTML, CSS, JS, React, TS, Git"
                     </span>
                   </p>
                   <p>{"}"}</p>
                 </div>
               </div>
-
               {/* Floating badge */}
               <motion.div
                 animate={{ y: [0, -8, 0] }}
